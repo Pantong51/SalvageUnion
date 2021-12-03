@@ -13,7 +13,7 @@ export class SalvageUnionActorSheet extends ActorSheet
 
     get template()
     {
-        return `systems/SalvageUnion/templates/actor-${this.actor.data.type}-sheet.html`;
+        return `systems/salvageunion/templates/actor-${this.actor.data.type}-sheet.html`;
     }
 
     getData()
