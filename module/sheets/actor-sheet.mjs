@@ -1,4 +1,4 @@
-export class SalvageUnionActorSheet extends SalvageUnionActorSheet
+export class SalvageUnionActorSheet extends ActorSheet
 {
     static get defaultOptions()
     {
