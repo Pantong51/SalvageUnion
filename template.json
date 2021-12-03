@@ -1,87 +1,27 @@
 {
-  "Actor": 
-  {
-    "types": ["pilot", "mech"],
-    "templates":
-    {    
-      "pilotstats": 
-      {
-        "hitpoints": 
-        {
-          "value": 10,
-          "min": 0
+    "Actor": {},
+    "Items": 
+    {
+        "tempaltes":{
+            "itemDescription":
+            {
+                "description": ""
+            }
         },
-        "abilitypoints": 
+        "types":[
+            "equipment",
+            "ability"
+        ],
+        "equipment":
         {
-          "value": 5,
-          "min": 0
+            "tempaltes": ["itemDescription"],
+            "damage": 0,
+            "range": "close"
         },
-        "stress":
+        "ability":
         {
-          "value": 0
+            "tempaltes": ["itemDescription"],
+            "cost": 0
         }
-      },
-      "mechstats":
-      {
-        "structurepoints":
-        {
-          "value": 10,
-          "min": 0
-        },
-        "energypoints":
-        {
-          "vaule": 0
-        },
-        "heat":
-        {
-          "value": 0
-        }
-      }
-    },
-    "pilot":
-    {
-      "templates": ["pilotstats"],
-      "biography": ""
-    },
-    "mech":
-    {
-      "templates": ["mechstats"]
     }
-  },
-  "Item": 
-  {
-    "types": ["equipment", "ability", "system", "module"],
-    "equipment": 
-    {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes": {},
-      "groups": {}
-    },
-    "ability": 
-    {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes": {},
-      "groups": {}
-    },
-    "system": 
-    {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes": {},
-      "groups": {}
-    },
-    "module": 
-    {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes": {},
-      "groups": {}
-    }
-  }
 }
