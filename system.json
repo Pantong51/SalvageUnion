@@ -21,7 +21,7 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/Pantong51/SalvageUnion",
-  "manifest": "https://gitlab.com/foundrynet/worldbuilding/raw/0.5.x/system.json",
-  "download": "https://gitlab.com/foundrynet/worldbuilding/-/archive/release-050/worldbuilding-release-050.zip",
+  "manifest": "https://github.com/Pantong51/SalvageUnion/system.json",
+  "download": "https://github.com/Pantong51/SalvageUnion/archive/refs/tags/0.0.1.zip",
   "license": "LICENSE.txt"
 }
