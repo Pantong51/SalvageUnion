@@ -1,48 +1,81 @@
 {
   "Actor": 
   {
-    "types": ["Pilot", "Mech"],
+    "types": ["pilot", "mech"],
     "templates":
     {    
-      "Pilot": 
+      "pilotstats": 
       {
-        "Hit Points": 
+        "hitpoints": 
         {
           "value": 10,
           "min": 0
         },
-        "Ability Points": 
+        "abilitypoints": 
         {
           "value": 5,
           "min": 0
         },
-        "Stress":
+        "stress":
         {
           "value": 0
         }
       },
-      "Mech":
+      "mechstats":
       {
-        "Structure Points":
+        "structurepoints":
         {
           "value": 10,
           "min": 0
         },
-        "Energy Points":
+        "energypoints":
         {
           "vaule": 0
         },
-        "Heat":
+        "heat":
         {
           "value": 0
         }
       }
+    },
+    "pilot":
+    {
+      "templates": ["pilotstats"],
+      "biography": ""
+    },
+    "mech":
+    {
+      "templates": ["mechstats"]
     }
   },
   "Item": 
   {
-    "types": ["Item", "Equipment", "Abilities", "Systems", "Modules"],
-    "item": 
+    "types": ["equipment", "ability", "system", "module"],
+    "equipment": 
+    {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    },
+    "ability": 
+    {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    },
+    "system": 
+    {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    },
+    "module": 
     {
       "description": "",
       "quantity": 1,
