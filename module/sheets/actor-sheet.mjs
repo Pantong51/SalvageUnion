@@ -96,59 +96,59 @@ export class SalvageUnionActorSheet extends ActorSheet
         context.modules = modules;
     }
 
-    activateListeners(html)
-    {
-        super.activateListeners(html);
-        
-        html.find('.item-edit').click(ev =>             
-        {
-            const li = $(ev.currentTarget).parents(".item");
-            const item = this.actor.items.get(li.data("itemId"));
-            item.sheet.render(true);
-        });
-
-        if(!this.isEditable) return;
-
-        html.find('item-create').click(this._onItemCreate.bind(this));
-
-        html.find('.item-delete').click(ev =>
-        {
-            const li = $(ev.currentTarget).parents(".item");
-            const item = this.actor.items.get(li.data('.itemId'));
-            item.delete();
-            li.slideUp(200, ()=> this.render(false));
-        });
-
-        html.find('.effect-control').click(ev=>onManageActiveEffect(ev, this.actor));
-
-        html.find('.rollable').click(this._onRoll.bind(this));
-
-        if(this.actor.owner)
-        {
-            let handler = ev => this._onDragStart(ev);
-            html.find('li.item').each((i, li) => 
-            {
-                li.setAttribute("draggable", true);
-                li.addEventListener("dragstart", handler, false);
-            });
-        }
-    }
-
-    async _onItemCreate(event)
-    {
-        event.preventDefault();
-        const header = event.currentTarget;
-        const type = header.dataset.type;
-        const data = duplicate(header.dataset);
-        const name = `New ${type.capitalize()}`;
-        const itemData = {
-            name: name,
-            type: type,
-            data: data
-        };
-
-        delete itemData.data["type"];
-
-        return await Item.create(itemData, {parent: this.actor});
+//    activateListeners(html)
+//    {
+//        super.activateListeners(html);
+//        
+//        html.find('.item-edit').click(ev =>             
+//        {
+//            const li = $(ev.currentTarget).parents(".item");
+//            const item = this.actor.items.get(li.data("itemId"));
+//            item.sheet.render(true);
+//        });
+//
+//        if(!this.isEditable) return;
+//
+//        html.find('item-create').click(this._onItemCreate.bind(this));
+//
+//        html.find('.item-delete').click(ev =>
+//        {
+//            const li = $(ev.currentTarget).parents(".item");
+//            const item = this.actor.items.get(li.data('.itemId'));
+//            item.delete();
+//            li.slideUp(200, ()=> this.render(false));
+//        });
+//
+//        html.find('.effect-control').click(ev=>onManageActiveEffect(ev, this.actor));
+//
+//        html.find('.rollable').click(this._onRoll.bind(this));
+//
+//        if(this.actor.owner)
+//        {
+//            let handler = ev => this._onDragStart(ev);
+//            html.find('li.item').each((i, li) => 
+//            {
+//                li.setAttribute("draggable", true);
+//                li.addEventListener("dragstart", handler, false);
+//            });
+//        }
+//    }
+//
+//    async _onItemCreate(event)
+//    {
+//        event.preventDefault();
+//        const header = event.currentTarget;
+//        const type = header.dataset.type;
+//        const data = duplicate(header.dataset);
+//        const name = `New ${type.capitalize()}`;
+//        const itemData = {
+//            name: name,
+//            type: type,
+//            data: data
+//        };
+//
+//        delete itemData.data["type"];
+//
+//        return await Item.create(itemData, {parent: this.actor});
     }
 }
