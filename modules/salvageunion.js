@@ -1,4 +1,4 @@
-import SUItemSheet from "./module/sheets/SUItemSheet.js";
+import SUItemSheet from "./modules/sheets/SUItemSheet.js";
 
 Hooks.one("init", function()
 {

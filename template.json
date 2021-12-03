@@ -2,16 +2,13 @@
     "Actor": {},
     "Items": 
     {
+        "types":["equipment","ability"],
         "tempaltes":{
             "itemDescription":
             {
                 "description": ""
             }
         },
-        "types":[
-            "equipment",
-            "ability"
-        ],
         "equipment":
         {
             "tempaltes": ["itemDescription"],
