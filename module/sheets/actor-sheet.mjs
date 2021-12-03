@@ -4,7 +4,7 @@ export class SalvageUnionActorSheet extends ActorSheet
     {
         return mergeObject(super.defaultOptions, {
             classes: ["salvageunion", "sheet", "actor"],
-            template: "systems/salvageunion/templates/actor/actor-sheet.html",
+            template: "systems/SalvageUnion/templates/actor/actor-sheet.html",
             width: 600,
             height: 600,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "equipment"}]
@@ -13,7 +13,7 @@ export class SalvageUnionActorSheet extends ActorSheet
 
     get template()
     {
-        return `systems/salvageunion/templates/actor-${this.actor.data.type}-sheet.html`;
+        return `systems/SalvageUnion/templates/actor-${this.actor.data.type}-sheet.html`;
     }
 
     getData()

@@ -6,7 +6,7 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.9",
   "author": "Dan 'Pan'",
-  "esmodules": ["module/SalvageUnion.js"],
+  "esmodules": ["module/SalvageUnion.mjs"],
   "styles": [],
   "packs": [],
   "languages": [
