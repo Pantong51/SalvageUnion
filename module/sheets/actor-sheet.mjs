@@ -7,7 +7,7 @@ export class SalvageUnionActorSheet extends ActorSheet
             template: "systems/salvageunion/templates/actor/actor-sheet.html",
             width: 600,
             height: 600,
-            tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features"}]
+            tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "equipment"}]
         });
     }
 
@@ -19,7 +19,7 @@ export class SalvageUnionActorSheet extends ActorSheet
     getData()
     {
         const context = super.getData();
-        const actorData = context.actor.datal
+        const actorData = context.actor.data;
 
         context.data = actorData.data;
         context.flags = actorData.flags;
@@ -43,15 +43,15 @@ export class SalvageUnionActorSheet extends ActorSheet
 
     _preparePilotData(context)
     {
-        for (let [k, v] of Object.entries(context.data.Pilot)) {
-            v.label = game.i18n.localize(CONFIG.SALVAGEUNION.PilotStats[k]) ?? k;
+        for (let [k, v] of Object.entries(context.data.pilotstats)) {
+            v.label = game.i18n.localize(CONFIG.SALVAGEUNION.pilotstats[k]) ?? k;
         }
     }
 
     _prepareMechData(context)
     {
-        for (let [k, v] of Object.entries(context.data.Mech)) {
-            v.label = game.i18n.localize(CONFIG.SALVAGEUNION.MechStats[k]) ?? k;
+        for (let [k, v] of Object.entries(context.data.mechstats)) {
+            v.label = game.i18n.localize(CONFIG.SALVAGEUNION.mechstats[k]) ?? k;
         }
     }
 
