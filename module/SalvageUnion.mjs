@@ -22,7 +22,7 @@ Hooks.once("init", async function()
     //CONFIG.Item.documentClass = SalvageUnionItem;
 
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("pilot", SalvageUnionActorSheet, {makeDefault: true});
+    Actors.registerSheet("salvageunion", SalvageUnionActorSheet, {makeDefault: true});
     //Items.unregisterSheet("core", ItemSheet);
     //Items.registerSheet("salvageunion", SalvageUnionItemSheet);
 
