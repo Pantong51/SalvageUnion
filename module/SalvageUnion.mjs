@@ -1,6 +1,6 @@
 //import document classes
 import {SalvageUnionActor} from "./documents/actor.mjs";
-import {SalvageUnionItem} from "./documents/equipment.mjs";
+//import {SalvageUnionItem} from "./documents/equipment.mjs";
 //import sheet classes
 import {SalvageUnionActorSheet} from "./sheets/actor-sheet.mjs";
 //import {SalvageUnionItemSheet} from "./sheets/item-sheet.mjs";
@@ -13,16 +13,16 @@ Hooks.once("init", async function()
     game.SalvageUnion = 
     {
         SalvageUnionActor,
-        SalvageUnionItem
+        //SalvageUnionItem
     };
 
     CONFIG.SALVAGEUNION = SALVAGEUNION;
 
     CONFIG.Actor.documentClass = SalvageUnionActor;
-    CONFIG.Item.documentClass = SalvageUnionItem;
+    //CONFIG.Item.documentClass = SalvageUnionItem;
 
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("pilot", SalvageUnionActorSheet);
+    Actors.registerSheet("pilot", SalvageUnionActorSheet, {makeDefault: true});
     //Items.unregisterSheet("core", ItemSheet);
     //Items.registerSheet("salvageunion", SalvageUnionItemSheet);
 

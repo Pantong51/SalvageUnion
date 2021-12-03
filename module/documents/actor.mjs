@@ -32,6 +32,8 @@ export class SalvageUnionActor extends Actor
     getRollData()
     {
         const data = super.getRollData();
+        this._getPilotRollData(data);
+        this._getMechRollData(data);
     }
 
     _getPilotRollData(data)
