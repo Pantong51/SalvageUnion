@@ -2,7 +2,7 @@
   "name": "salvageunion",
   "title": "Salvage Union",
   "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.9",
   "author": "Dan 'Pan'",
@@ -22,6 +22,6 @@
   "secondaryTokenAttribute": "pilotstats.abilitypoints",
   "url": "https://github.com/Pantong51/SalvageUnion",
   "manifest": "https://raw.githubusercontent.com/Pantong51/SalvageUnion/main/system.json",
-  "download": "https://github.com/Pantong51/SalvageUnion/archive/refs/tags/0.0.10.zip",
+  "download": "https://github.com/Pantong51/SalvageUnion/archive/refs/tags/0.0.11.zip",
   "license": "LICENSE.txt"
 }
