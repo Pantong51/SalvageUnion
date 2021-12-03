@@ -12,7 +12,7 @@ Hooks.once("init", async function()
 {
     game.SalvageUnion = 
     {
-        SalvageUnionActor,
+        SalvageUnionActor
         //SalvageUnionItem
     };
 
