@@ -3,7 +3,7 @@ export class SalvageUnionActorSheet extends ActorSheet
     static get defaultOptions()
     {
         return mergeObject(super.defaultOptions, {
-            classes: ["salvageunion", "sheet","actor"],
+            classes: ["salvageunion", "sheet", "actor"],
             template: "systems/salvageunion/templates/actor/actor-sheet.html",
             width: 600,
             height: 600,
@@ -36,7 +36,7 @@ export class SalvageUnionActorSheet extends ActorSheet
         }
 
         context.rollData = context.actor.getRollData();
-        context.effects = prepareActiveEffectCategories(this.actor.effects);
+        //context.effects = prepareActiveEffectCategories(this.actor.effects);
         
         return context;
     }
