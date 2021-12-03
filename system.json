@@ -21,7 +21,7 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/Pantong51/SalvageUnion",
-  "manifest": "https://github.com/Pantong51/SalvageUnion/system.json",
+  "manifest": "https://raw.githubusercontent.com/Pantong51/SalvageUnion/main/system.json",
   "download": "https://github.com/Pantong51/SalvageUnion/archive/refs/tags/0.0.1.zip",
   "license": "LICENSE.txt"
 }
