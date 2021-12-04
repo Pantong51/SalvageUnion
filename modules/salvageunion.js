@@ -24,5 +24,16 @@ Hooks.once("init", async function() {
         label: "SU.SheetClassActor"
     });
 
+    Handlebars.registerHelper("times", function (n, content)
+    {
+        let result = "";
+        for(let i = 0 ; i < n ; ++i)
+        {
+            result += content.fn(i);
+        }
+
+        return result;
+    });
+    
     return preloadHandlebarsTemplates();
 });

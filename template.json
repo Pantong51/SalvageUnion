@@ -1,8 +1,27 @@
 {
     "Actor": 
     {
-        "types":["pilot","mech"],
+        "types":["pilot","mech", "npc"],
         "templates":{
+            "commonStats":
+            {
+                "health": 
+                {
+                    "current": 0,
+                    "max": 0,
+                    "temp": 0
+                },
+                "actionPoints":
+                {
+                    "current": 0,
+                    "max": 0
+                },
+                "resource": 
+                {
+                    "current": 0,
+                    "max": 0
+                }
+            },
             "actorDescription":
             {
                 "description": ""
@@ -10,22 +29,7 @@
         },
         "pilot":
         {
-            "health": 
-            {
-                "current": 0,
-                "max": 0,
-                "temp": 0
-            },
-            "abilityPoints":
-            {
-                "current": 0,
-                "max": 0
-            },
-            "stress": 
-            {
-                "current": 0,
-                "max": 0
-            },
+            "tempaltes": ["commonStats", "actorDescription"],
             "callsign": "",
             "background": "",
             "ideal": "",
@@ -40,24 +44,7 @@
         },
         "mech":
         {
-            "structure":
-            {
-                "current": 0,
-                "max": 0,
-                "temp": 0
-            },
-            "energyPts": 
-            {
-                "current": 0,
-                "max": 0,
-                "temp": 0
-            },
-            "heat":
-            {
-                "current": 0,
-                "max": 0,
-                "temp": 0
-            },
+            "tempaltes": ["commonStats", "actorDescription"],
             "systemSlots":
             {
                 "current": 0,
@@ -76,6 +63,10 @@
                 "current": 0,
                 "max": 0
             }
+        },
+        "npc":
+        {
+            "tempaltes": ["commonStats", "actorDescription"]
         }
     },
     "Item": 
@@ -91,7 +82,8 @@
         {
             "tempaltes": ["itemDescription"],
             "damage": 0,
-            "range": "close"
+            "range": "close",
+            "antiMaterial": false
         },
         "ability":
         {

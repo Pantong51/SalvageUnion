@@ -11,7 +11,8 @@
                 "long": "Long"
             },
             "rangeType": "Range Type",
-            "damage": "Damage"
+            "damage": "Damage",
+            "description": "Description"
         },
         "ability":
         {

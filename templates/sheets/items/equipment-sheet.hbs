@@ -5,7 +5,7 @@
             <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
         </h1>
     </header>
-    <div>
+    <div class="sheet-content">
         <table>
             <tr>
                 <th> {{ localize "su.equipment.rangeType" }} </th>
@@ -26,6 +26,16 @@
                 </td>
             </tr>
         </table>
-        <textarea name = "data.description">{{data.data.description}}</textarea>
+        <table>
+            <tr>
+                <th>{{ localize "su.equipment.description"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+                </td>
+            </tr>
+        </table>
+
     </div>
 </form>
