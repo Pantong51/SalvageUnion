@@ -1,0 +1,16 @@
+{
+    "su": 
+    {
+        "equipment":
+        {
+            "range":
+            {
+                "engaged": "Engaged",
+                "far": "Far",
+                "close": "Close",
+                "long": "Long"
+            },
+            "rangeType": "Range Type"
+        }
+    }
+}
