@@ -1,6 +1,6 @@
 {
     "Actor": {},
-    "Items": 
+    "Item": 
     {
         "types":["equipment","ability"],
         "tempaltes":{

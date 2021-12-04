@@ -1,9 +1,12 @@
-import SUItemSheet from "./modules/sheets/SUItemSheet.js";
+import SUItemSheet from "./sheets/SUItemSheet.js";
 
-Hooks.one("init", function()
-{
+Hooks.once("init", async function() {
     console.log("Salvage Union | INIT");
     
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("salvageunion", SUItemSheet, {makeDefault: true});
+    Items.registerSheet("salvageunion", SUItemSheet, 
+    {
+        makeDefault: true,
+         label: "SU.SheetClassItem"
+    });
 });
