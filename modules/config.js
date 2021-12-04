@@ -8,3 +8,9 @@ su.attackRanges = {
     close: "su.equipment.range.close",
     long: "su.equipment.range.long"
 };
+
+su.chassisTypes = {
+    light: "su.mech.chassis.light",
+    medium: "su.mech.chassis.medium",
+    heavy: "su.mech.chassis.heavy"
+}

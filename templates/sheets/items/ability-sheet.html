@@ -8,17 +8,11 @@
     <div>
         <table>
             <tr>
-                <th>{{localize "su.equipment.rangeType"}}</th>
+                <lable>{{ localize "su.ability.cost" }}</lable>
             </tr>
             <tr>
                 <td>
-                    <select name="data.range">
-                        {{#select data.data.range}}
-                        {{#each config.attackRanges as |name type|}}
-                        <option value="{{type}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
+                    <input type="text" name="data.abilityCost" value={{data.data.abilityCost}} data-dtype="Number" placeholder="1"/>
                 </td>
             </tr>
         </table>

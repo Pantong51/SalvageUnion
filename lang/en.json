@@ -10,7 +10,69 @@
                 "close": "Close",
                 "long": "Long"
             },
-            "rangeType": "Range Type"
+            "rangeType": "Range Type",
+            "damage": "Damage"
+        },
+        "ability":
+        {
+            "cost": "Ability Point Cost"
+        },
+        "system":
+        {
+            "cost": "Energy Point Cost"
+        },
+        "module":
+        {
+
+        },
+        "mech":
+        {
+            "structure":
+            {
+                "current": "Current Structure",
+                "max": "Max Structure",
+                "temp": "Temporary Structure"
+            },
+            "energyPoints":
+            {
+                "current": "Current Energy Points",
+                "max": "Max Energy Points"
+            },
+            "heat":
+            {
+                "current": "Current Heat",
+                "max": "Max Heat"
+            },
+            "systems": "Systems",
+            "modules": "Modules",
+            "chassisType": "Chassis Type",
+            "cargo": "Cargo"
+        },
+        "pilot":
+        {
+            "health":
+            {
+                "current": "Current Health",
+                "max": "Max Health",
+                "temp": "Temporary Health"
+            },
+            "abilityPoints":
+            {
+                "current": "Current Ability Points",
+                "max": "Max Ability Points"
+            },
+            "stress":
+            {
+                "current": "Current Stress",
+                "max": "Max Stress"
+            },
+            "callsign": "CallSign",
+            "background": "Background",
+            "ideal": "Ideal",
+            "flaw": "Flaw",
+            "keepsake": "Keepsake",
+            "motto": "Motto",
+            "inventory": "Inventory"
         }
     }
 }

@@ -3,6 +3,7 @@ import {su} from "./config.js";
 import {preloadHandlebarsTemplates} from "./templates.js";
 
 import SUItemSheet from "./sheets/SUItemSheet.js";
+import SUActorheet from "./sheets/SUActorSheet.js";
 
 Hooks.once("init", async function() {
     console.log("Salvage Union | INIT");
@@ -14,6 +15,13 @@ Hooks.once("init", async function() {
     {
         makeDefault: true,
         label: "SU.SheetClassItem"
+    });
+    
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("salvageunion", SUActorheet,
+    {
+        makeDefault: true,
+        label: "SU.SheetClassActor"
     });
 
     return preloadHandlebarsTemplates();

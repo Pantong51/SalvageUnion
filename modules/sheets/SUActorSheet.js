@@ -1,8 +1,8 @@
 import {su} from "../config.js";
 
-export default class SUItemSheet extends ItemSheet{
+export default class SUActorheet extends ActorSheet{
     get template() {
-        return `/systems/salvageunion/templates/sheets/items/${this.item.data.type}-sheet.html`;
+        return `/systems/salvageunion/templates/sheets/actors/${this.actor.data.type}-sheet.html`;
     }
 
     getData(){

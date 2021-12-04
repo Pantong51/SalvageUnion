@@ -1,8 +1,86 @@
 {
-    "Actor": {},
+    "Actor": 
+    {
+        "types":["pilot","mech"],
+        "templates":{
+            "actorDescription":
+            {
+                "description": ""
+            }
+        },
+        "pilot":
+        {
+            "health": 
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "abilityPoints":
+            {
+                "current": 0,
+                "max": 0
+            },
+            "stress": 
+            {
+                "current": 0,
+                "max": 0
+            },
+            "callsign": "",
+            "background": "",
+            "ideal": "",
+            "flaw": "",
+            "keepsake": "",
+            "motto": "",
+            "inventorySlots":
+            {
+                "current": 0,
+                "max": 0
+            }
+        },
+        "mech":
+        {
+            "structure":
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "energyPts": 
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "heat":
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "systemSlots":
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "moduleSlots":
+            {
+                "current": 0,
+                "max": 0,
+                "temp": 0
+            },
+            "chassisType": "medium",
+            "cargoSlots":
+            {
+                "current": 0,
+                "max": 0
+            }
+        }
+    },
     "Item": 
     {
-        "types":["equipment","ability"],
+        "types":["equipment","ability", "module", "system"],
         "tempaltes":{
             "itemDescription":
             {
@@ -18,7 +96,16 @@
         "ability":
         {
             "tempaltes": ["itemDescription"],
-            "cost": 0
+            "abilityCost": 0
+        },
+        "module":
+        {
+            "tempaltes": ["itemDescription"]
+        },
+        "system":
+        {
+            "tempaltes": ["itemDescription"],
+            "energyCost": 0
         }
     }
 }
